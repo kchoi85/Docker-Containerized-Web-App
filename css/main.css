@@ -1,0 +1,141 @@
+
+.card {
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.7);
+  transition: 0.4s;
+  width: 900px;
+  height: 580px;
+  padding: 40px;
+}
+
+
+.container {
+  width: 260px;
+}
+
+
+#blur {
+  /* The image used */
+
+  /* Add the blur effect */
+  -position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 56.5px;
+}
+
+#logo {
+  margin: 0px 0px 0px 0px;
+  width: 250px;
+  padding: 30px;
+}
+
+#city {
+  box-shadow: 0px 10px 20px 0 rgba(0,0,0,0.4);
+  margin: -330px 0px 0px 340px; /* -265px */
+  width:550px;
+}
+
+
+#formid {
+  margin: auto;
+  width: 60%;
+  padding: 0px;
+
+  }
+
+#background {
+  background-color: coral;
+}
+
+/*
+#logemail {
+  margin: 0px 0px 0px -20px;
+  width: 240px;
+  height:25px;
+  font-size:12pt;
+  padding: 3px;
+}
+*/
+#logemail {
+
+margin: 0px 0px 0px -25px;
+border: 0;
+outline: none;
+box-shadow: none;
+display: block;
+height: 30px;
+line-height: 30px;
+padding: 8px 15px;
+border-bottom: 1px solid #000000;
+width: 230px;
+font-size: 13px;
+
+}
+/*
+#logpassword {
+  margin: 0px 0px 0px -20px;
+  width: 240px;
+  height:25px;
+  font-size:12pt;
+  padding: 3px;
+}*/
+
+#logpassword {
+  margin: 0px 0px 0px -25px;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 8px 15px;
+  border-bottom: 1px solid #000000;
+  width: 230px;
+  font-size: 13px;
+}
+
+#submit {
+  margin: 0px 0px 0px -20px;
+  background-color: #eee; /]
+  border: none;
+  width: 251px;
+  color: #696969;
+  padding: 9px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+#submit:hover {
+  color: #eee;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.register {
+    margin: -20px 0px 10px 65px;
+}
+
+#head {
+  margin: 20px 0px 0px 710px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+#circ {
+    margin: 40px 0px 0px 75px;
+}
+
+.author {
+      margin: -40px 0px 0px 370px;
+      color: grey;
+}
+
+.a2019-2020 {
+      margin:70px 0px 0px 400px;
+      color: grey;
+}
