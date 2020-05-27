@@ -8,16 +8,16 @@
 - Docker installed on your local environment
 - IDE (Visual Studio Code recommended)
 
-## All files to be created
+## All Files to be Created
 - app.py
 - requirements.txt
 - templates/index.html
 - Dockerfile
 
-## Make a project directory to store the files
+## Make a Project Directory to Store the Files
 `mkdir project_folder`
 
-## Your Flask App - app.py
+## Creating Your Flask Application File - app.py
 ```python
 from flask import Flask, render_template
 
@@ -34,7 +34,7 @@ def index():
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
    ```
-## Specify the Flask version - requirements.txt
+## Specifying the Flask version - requirements.txt
 `Flask==0.10.1`
 
 ## Your index.html file - templates/index.html
@@ -84,5 +84,8 @@ if __name__ == "__main__":
 </body>
 </html>
 ```
+
+## Writing the Dockerfile
+> Note: Visual Studio Code has Docker plugins for efficient edits
 
  
