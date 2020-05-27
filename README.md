@@ -17,7 +17,7 @@
 ## Make a project directory to store the files
 `mkdir project_folder`
 
-## app.py - Your Flask App
+## Your Flask App - app.py
 ```python
 from flask import Flask, render_template
 
@@ -34,11 +34,54 @@ def index():
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
    ```
-## requirements.txt (specify the version of the Flask)
+## Specify the Flask version - requirements.txt
 `Flask==0.10.1`
 
-## templates/index.html (Your index.html file)
+## Your index.html file - templates/index.html
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FDM Group Portal</title>
+<link rel="stylesheet" href="css/main.css">
 
+</head>
+<body>
+<div id="blur" style="background-image: url('images/blurb.png');">
+<div class="card">
+  <img id="logo" src="images/fdm.png" alt="FDM">
+  <div class="container">
+    <form id="formid" action="/action_page.php">
+      <input type="text" id="logemail" name="logemail" placeholder="Email Address" required><br><br>
+      <input type="password" id="logpassword" name="logpassword" placeholder="Password" required><br><br>
+      <input id="submit" type="submit" value="Login">
+    </form>
+  </div>
+    <img id="city" src="images/city.jpg" alt="Toronto">
+
+  <div class="register">
+    <span class="txt1">
+      No FDM Account?
+    </span>
+    <a class="txt2" href="#">
+      Register
+    </a>
+  </div>
+    <!---  <p id="head">Toronto Financial District</p> --->
+<img id="circ" src="images/circ.PNG" alt="FDM Circles" width="150">
+  <div class="a2019-2020">
+    <a id="txt3">
+        &copy; 2020-2021
+    </a>
+  </div>
+  <div class="author">
+    <a id="txt4">
+        Developed by Kihoon
+    </a>
+  </div>
+</div>
+</body>
+</html>```
 
  
