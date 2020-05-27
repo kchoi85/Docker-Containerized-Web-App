@@ -116,7 +116,7 @@ docker build -t dockerhub_username/container-app .
 ```
 - Logging into Docker Hub
 ```bash
-docker login -u dockerhub_username -p your_dockerhub_password
+docker login -u dockerhub_username -p dockerhub_password
 ```
 - Pushing to Repository
 ```bash
