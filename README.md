@@ -87,5 +87,47 @@ if __name__ == "__main__":
 
 ## Writing the Dockerfile
 > Note: Visual Studio Code has Docker plugins for efficient edits
+```Dockerfile
+# our base image
+FROM alpine:3.5
 
- 
+# Install python and pip
+RUN apk add --update py2-pip
+
+# install Python modules needed by the Python app
+COPY requirements.txt /usr/src/app/
+RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
+
+# copy files required for the app to run
+COPY app.py /usr/src/app/
+COPY templates/index.html /usr/src/app/templates/
+
+# tell the port number the container should expose
+EXPOSE 5000
+
+# run the application
+CMD ["python", "/usr/src/app/app.py"]
+```
+
+## Building the Image and Pushing to Repository
+> Note: Do not forget the **.** at the end of the query
+```bash
+docker build -t dockerhub_username/container-app .
+```
+- Logging into Docker Hub
+```bash
+docker login -u dockerhub_username -p your_dockerhub_password
+```
+- Pushing to Repository
+```bash
+docker push dockerhub_username/container-app
+```
+## Running Your Image 
+> Note: we are exposing port 5000 of the container and linking to port 8888
+```bash 
+docker run -p 8888:5000 --name container-app dockerhub_username/container-app
+```
+
+## Check your containerized app
+- http://localhost:8888
+
